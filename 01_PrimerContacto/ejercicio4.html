@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejercicio 4</h1>
+
+    <ul>
+        <li>
+            <a href="./index.html">Volver</a>
+        </li>
+       
+    </ul>
+
+    <script>
+       // pedir cuántos números quiere sumar --> las veces que se repetirá el bucle
+        let repeticiones = prompt("¿Cuántos números quieres sumar?");
+
+        let contador = 1;
+
+        let suma = 0;
+
+        do {
+        // pedir los números
+            let numero = Number(prompt("Dame un número para la suma"));
+            //sumarlos
+            suma = numero + suma;
+
+            // subir el contador
+            contador = contador + 1;
+            
+        } while (contador <= repeticiones);
+      
+        // darme el resultado de la suma
+        alert("El resultado de la suma es: " + suma);
+        
+
+    </script>
+
+    <script src="./main.js"></script>
+</body>
+</html>

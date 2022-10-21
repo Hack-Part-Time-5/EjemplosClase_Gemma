@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejercicio 3</h1>
+
+    <ul>
+        <li>
+            <a href="./index.html">Volver</a>
+        </li>
+       
+    </ul>
+
+    <script>
+        let edad = prompt("¿Cuántos años tienes?");
+        let cartera = 10;
+        let precio = 3;
+
+        if (edad >= 18) {
+            //true, verdadero
+            alert("Bienvenido a nuestro bar");
+            cartera = cartera - precio;
+        } else {
+            //false, falso
+            alert("Pa tu casa");
+        }
+
+        alert("Chau chau, te quedan "+ cartera + " €");
+        
+
+    </script>
+
+    <script src="./main.js"></script>
+</body>
+</html>
