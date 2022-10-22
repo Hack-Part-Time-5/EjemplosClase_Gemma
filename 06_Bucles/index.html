@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // FOR
+
+       /*  for(desde; hasta; actualización){
+            // lo que queremos que se ejecute
+        }
+
+        
+ */
+
+
+       /*  for (let i = 0; i <= 15; i++) {
+            
+            console.log(i);
+        } */
+
+        // Programa para calcular la tabla de multiplicar de un número que diga el usuario
+/* 
+        let ingresaNum = prompt("Qué tabla de multiplicar quieres saber?");
+
+        for(let i = 1; i <= 10; i++){
+            let resultado = ingresaNum * i;
+            console.log(`${ingresaNum} x ${i} = ${resultado}`);
+        } */
+
+        // Imprimir los primeros 20 números, sin el 0, el 10, ni el 20.
+
+       /*  for(let i = 1; i < 20; i++){
+            if(i == 10){
+                continue;
+            }
+            console.log(i);
+        } */
+
+
+        // Imprimir las áreas de los primeros 10 círculos.
+        // pi * r**2
+/* 
+        for(let radio = 1; radio <= 10; radio++){
+            let pi = 3.14;
+            let area = pi * radio**2;
+            console.log(`El área del círculo con radio ${radio} es: ${area}`);
+        } */
+
+
+       /*  for(let radio = 1; radio <= 10; radio++){
+            
+            console.log(`El área del círculo con radio ${radio} es: ${Math.floor(Math.PI * Math.pow(radio, 2))}`);
+        }
+         */
+
+
+
+        // WHILE & DO WHILE
+
+         /* let repetir = true;
+        
+        while(repetir){
+            console.log("Wow, hasta el infinito");
+        } */
+
+        
+       /*  for (let i = 0; i <= 15; i++) {
+            
+            console.log(i);
+        } */
+
+       /*  let i = 0;
+
+        while(i <= 15){
+            console.log(i);
+            i++;
+        }
+         */
+        /*  for(let radio = 1; radio <= 10; radio++){
+            
+            console.log(`El área del círculo con radio ${radio} es: ${Math.floor(Math.PI * Math.pow(radio, 2))}`);
+        }
+         */
+
+        /*  let radio = 1;
+
+         while(radio <= 10){
+            console.log(`El área del círculo con radio ${radio} es: ${Math.floor(Math.PI * Math.pow(radio, 2))}`);
+            radio++;
+         }
+ */
+         // Programa que solicita una entrada al usuario hasta que ingrsa "ESC"
+
+        /*  let entrada = prompt("Ingresa un dato");
+
+         while(entrada != "ESC"){
+            alert(`El usuario ingresó ${entrada}`);
+            entrada = prompt("Vuelva a introducir un dato");
+         }
+
+         alert("Muy bien! Has salido del bucle!"); */
+
+         let i = 0;
+
+         do{
+            console.log(i);
+            i++;
+         }while(i <= 10);
+
+         console.log("Terminado");
+
+         // Programa que solicita una entrada y que si es un número múltiplo de 5, que pare el bucle
+
+         let numero = 0;
+
+         do{
+            numero = prompt("Ingresa un número");
+            console.log(numero);
+         }while(numero % 5 != 0)
+
+         alert("Ha terminado el bucle");
+
+
+
+    </script>
+</body>
+</html>
