@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // FUNCTION DECLARATION
+/* 
+        function saludarMarco(){
+            // instrucciones
+            console.log("Buenas tardes Marco!");
+        }
+
+        function saludarAlicia(){
+            // instrucciones
+            console.log("Buenas tardes Alicia!");
+        } */
+
+        // llamamos a la función para que se ejecute
+
+        /* saludarMarco();
+        saludarAlicia();
+ */
+/* 
+        function saludar(nombre){
+            console.log(`Buenas tardes ${nombre}`);
+        }
+
+        saludar(prompt("Dime tu nombre")); */
+
+
+       
+        // Función para sumar dos números
+
+        /* function suma(num1, num2){
+            console.log(num1 + num2); --> side-effect
+        }
+
+        suma(Number(prompt("Dime un número")), Number(prompt("Dime un número"))); */
+
+       
+        
+        // RETURN
+
+        /* function suma(num1, num2){
+            return num1 + num2;
+        }
+
+        console.log(suma(Number(prompt("Dime un número")), Number(prompt("Dime un número")))); */
+
+       /*  function areaCirculo(r){
+            return Math.floor(Math.PI * Math.pow(r, 2));
+        }
+
+
+        for(let radio = 1; radio <= 10; radio++){
+            
+            console.log(`El área del círculo con radio ${radio} es: ${areaCirculo(radio)}`);
+        } */
+
+        // Hacer una calculadora:
+
+        /* function calculadora(x, y, operador){ 
+            switch (operador){
+                case "+":
+                    return x + y;
+                    break;
+
+                case "-":
+                    return x - y;
+                    break;
+
+                case "*":
+                    return x * y;
+                    break;
+                
+                case "/":
+                    return x / y;
+                    break;
+                
+                default:
+                    return 0;
+                    break;
+
+            }
+        }
+
+        console.log(calculadora(20, 5, "*"));
+        console.log(calculadora(20, 10, "-"));
+        console.log(calculadora(50, 5, "/"));
+        console.log(calculadora(100, 20, "+")); */
+
+
+        // FUNCTION EXPRESSION
+
+        // hoisting --> mueve los elementos arriba o abajo automaticamente.
+
+        
+        /* function saludar(){
+            let nombre = "Buenas tardes"
+            
+        } */
+        // llamada
+
+       /*  console.log(nombre); */
+        
+
+        // ARROW FUNCTION
+
+       /*  let hi = () => {
+            console.log("Holaaaa");
+            console.log();
+        } 
+
+       
+        hi(); */
+
+
+        let resultado = 0;
+
+        function sumar(primerNum, segundoNum){
+            resultado = primerNum + segundoNum;
+        }
+
+
+        sumar(5, 6);
+
+        console.log(resultado);
+
+
+       
+
+
+    </script>
+</body>
+</html>
