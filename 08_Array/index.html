@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Lista de datos ordenada
+
+        // Como declarar un array
+
+       /*  let array = [];
+
+        let array2 = [1, 2, 3, 4];
+
+        let nombres = ["Gemma", "Dani", "Mohamed", "Marco"];
+
+        let ejemplo = ["Gemma", "Zaragoza Balaguer", 23, true, false];
+
+        let array5 = ["hola", "que tal", [23, 5]];
+
+        console.log(array5); */
+
+        /* let lenguajes  = ["HTML", "CSS", "JS", "PHP", "Python"]; */
+
+        // Acceder e imprimir en consola solamente "CSS".
+
+        /* console.log(lenguajes[lenguajes.length - 1]); */
+       /*  console.log(lenguajes[0]);
+
+        let lenguajesPuntuacion = [
+            ["HTML", 5],
+            ["CSS", 10],
+            ["JS", 8],
+            ["PHP", 4]
+        ]
+
+        console.log(lenguajesPuntuacion[2][1]);
+ */
+
+       /*  let numeros = [5, 10, 3, 8];
+
+        let resultado1 = numeros[1] + numeros[3];
+        console.log(resultado1);
+
+        let resultado2 = numeros[0] + numeros[2];
+        console.log(resultado2); */
+
+        
+        // Como reemplazar un elemento de un array:
+      
+       /*  let nombres = ["Gemma", "Dani", "Mohamed", "Marco"]; */
+        //let nombres = ["Dani", "Mohamed"];
+
+        /* nombres[4] = "Nico";
+
+        console.log(nombres); */
+
+        /* nombres[0] = "Nico";
+
+        console.log(nombres);  */
+
+        // posición = índices
+
+
+        // Mutator --> nos devuelve un resultado que modifica el array original.
+
+        // Iterator --> metodos para hacer un recorrido en el array. Bucles.
+
+        // Accesor --> devolverte una copia del array original con el cambio hecho. EL array original se     mantiene.
+
+        // Array.from --> convertir una string en array
+
+       /*  let string = Array.from("Miquel");
+
+        console.log(string); */
+
+        // MUTATOR -----------------------------------------------------------------------------
+
+        // Concat --> concatena arrays
+        
+        /* let array2 = [1, 2, 3, 4];
+
+        let nombres = ["Gemma", "Dani", "Mohamed", "Marco"];
+
+
+        console.log(array2.concat(nombres)); */
+
+        
+        // Push --> añadir o empujar un elemento en el array.
+
+        /* let miArray = ["marca", 5, "palabra"];
+
+        miArray.push("un elemento más");
+
+        console.log(miArray); */
+
+
+        // Pop --> elimina el último elemento del array.
+
+        /* let personas = ["Gemma", "Dani", "Mohamed", "Marco"];
+
+        console.log(personas.pop());
+
+        console.log(personas);
+
+        personas.pop();
+
+        console.log(personas);
+ */
+        // Shift --> justo lo contrario que pop, elimina el primer elemento de un array.
+
+       /*  personas.shift();
+
+        console.log(personas); */
+
+
+
+        // ITERATOR -----------------------------------------------------------------------------
+
+        // Includes 
+
+        /* let nombres = ["Gemma", "Dani", "Mohamed", "Marco"];
+
+        console.log(nombres.includes("Mohamed")); */
+
+        // Ejercicio extra:
+
+        /* let listaNombres = [];
+        let cantidad = 6;
+
+        do {
+            let entrada = prompt("¿A quien invitas a tu fiesta?");
+            listaNombres.push(entrada.toUpperCase());
+
+        } while (listaNombres.length < cantidad);
+
+
+        console.log(listaNombres); */
+
+        // indexOf --> itera por cada elemento hasta encontrar el correspondiente y nos devuelve su índice.
+
+        /* let valores = ["a", "b", "c", "d"];
+
+        console.log(valores.indexOf("g")); */
+
+
+        // at --> devuelve el elemento que esté en la posición indicada.
+
+       /*  let valores = ["a", "b", "c", "d"];
+
+        console.log(valores.at(3)); */
+
+
+
+        // ACCESOR  -----------------------------------------------------------------------------
+
+        // flat --> si hay algún array de array, los valores se juntan todos formando un solo array. 
+
+        /* let valores = ["a", "b", "c", "d", ["e", "f"]];
+        
+        let valoresUnidos = valores.flat();
+
+        console.log(valores);
+        console.log(valoresUnidos); */
+
+        // join --> Nos devuelve una cadena, y podemos juntar o separar cada elemento como queramos.
+
+        /* let valores = ["a", "b", "c", "d"];
+
+        let cadena = valores.join('-');
+
+        console.log(cadena); */
+
+        // slice
+
+       /*  let nombres = ['Rita', 'Pedro', 'Miguel', 'Ana', 'Vanesa'];
+
+        let masculinos = nombres.slice(3);
+
+        console.log(masculinos); */
+
+
+        // Bucles con Array
+
+        /* for(let i = 0; i <= 10; i++){
+            console.log(i);
+        } */
+
+       /*  let nombres = ['Rita', 'Pedro', 'Miguel', 'Ana', 'Vanesa', 'Coral'];
+
+        for(let i = 0; i < nombres.length; i++){
+            console.log(nombres[i]);
+        } */
+
+        // Rita
+
+        // Pedro
+
+        // Miguel
+
+        // ¿Cómo funciona internamente el indexOf?
+
+        let nombres = ['Rita', 'Pedro', 'Miguel', 'Ana', 'Vanesa', 'Coral'];
+
+        function indexOf(array, value){
+            for(let i = 0; i < array.length; i++){
+                if(array[i] === value) return i;
+
+            }
+
+            return -1;
+
+        }
+
+        console.log(indexOf(nombres, "Gemma"));
+
+
+        
+
+
+    
+
+
+    </script>
+</body>
+</html>
