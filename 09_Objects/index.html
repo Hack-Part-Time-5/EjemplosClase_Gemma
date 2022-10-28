@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Object Literal 
+
+       /*  let persona = {
+            nombre: "Alicia",
+            apellido: "García",
+            edad: 26,
+            saluda: function(){
+                console.log("Hola");
+            }
+        }
+        let persona2 = {
+            nombre: "Gemma",
+            apellido: "Zaragoza",
+            edad: 26,
+            saluda: function(){
+                console.log("Hola");
+            }
+        }
+
+        console.log(persona); */
+
+        // 2 categorías
+
+        // NATIVE --> estan explicados en ECMAscript --> object literal por ejemplo
+
+        // HOST --> definidos por el entorno de trabajo (navegador)
+
+        /* let object = {};
+        let fechaActual = new Date();
+
+        console.log(fechaActual);
+
+        let coche = {
+            marca : "bmw",
+            modelo : "X5",
+            color : "rojo",
+            año : 2000,
+            operativo : true
+        }
+
+        console.log(coche); */
+
+
+        // Crear un objeto con un constructor
+
+        // interfaz
+
+       /*  function producto(tipo, color, precio, vendido, iva){
+            this.tipo = tipo;
+            this.color = color;
+            this.precio = precio;
+            this.vendido = vendido;
+            this.iva = iva;
+            this.impuestos = function(){
+                console.log(`Total a pagar ${this.precio * this.iva}`);
+            }
+        }
+
+        let producto01 = new producto("taza", "azul", 20, true, 0.10);
+        let producto02 = new producto("monopoly", "muchos", 14, false, 0.10); */
+
+        /* console.log(producto01); */
+
+        //array[0]
+
+        // Formas de acceder --> con el "." y con los "[]"
+        /* console.log(producto02.tipo);
+        console.log(producto02["color"]);
+
+        producto01.tipo = "juguete";
+        producto02["precio"] = 50;
+
+        console.log(producto01);
+        console.log(producto02);
+
+
+        function casa(precio, tamaño, dimensiones){
+            this.precio = precio;
+            this.tamaño = tamaño;
+            this.dimensiones = dimensiones;
+        }
+
+        let casa01 = new casa(1500000, 70, "muh grande");
+
+        console.log(casa01.precio);
+        */
+
+       /*  function casa(literal){
+            this.precio = literal.precio;
+            this.tamaño = literal.tamaño;
+            this.dimensiones = literal.dimensiones;
+        }
+
+        let casa01 = new casa(
+            {
+                precio : 1500000,
+                tamaño : 70,
+                dimensiones: "super grande"
+            }
+        ); */
+
+        let animales = {
+            mamíferos : "perro",
+            aves : "gorrión",
+            reptiles : "cocodrilo"
+        }
+
+        // FOR ... IN
+
+        /* for (const key in animales) {
+            console.log(animales[key]);
+        } */
+
+        console.log(Object.keys(animales));
+        
+        console.log(Object.values(animales));
+
+        
+
+        
+
+    </script>
+</body>
+</html>
