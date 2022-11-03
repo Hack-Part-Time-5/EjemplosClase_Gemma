@@ -218,14 +218,15 @@ console.log(coche); */
 
 
 // forEach
-let partesDelCoche = ["asientos", "volante", "ruedas", "marchas"];
+/* let partesDelCoche = ["asientos", "volante", "ruedas", "marchas"];
 
 partesDelCoche.forEach(el => el);
 
 console.log(partesDelCoche);
 
 
-partesDelCoche.forEach((el, i)=> el)
+partesDelCoche.forEach((el, i)=> el) */
+
 
 
 
